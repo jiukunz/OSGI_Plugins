@@ -1,0 +1,9 @@
+apply plugin: 'osgi'
+
+version '1.0.0'
+
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+    compile project(':extension-point')
+}
+

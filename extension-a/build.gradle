@@ -1,0 +1,13 @@
+apply plugin: 'osgi'
+
+dependencies {
+    compile project(':extension-point')
+}
+
+jar {
+    manifest {
+        instruction 'Bundle-Activator', 'com.thoughtworks.extension_a.Activitor'
+        instruction 'Import-Package', 'org.osgi.framework', 'com.thoughtworks.extensionpoint'
+        instruction 'Bundle-Name', 'extension-a'
+    }
+}

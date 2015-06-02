@@ -1,0 +1,1 @@
+include 'main', 'extension-point', 'extension-a', 'extension-b'

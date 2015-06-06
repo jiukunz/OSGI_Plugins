@@ -17,7 +17,7 @@ public class ExtensionPoint implements ServiceTrackerCustomizer<TextProvider, Te
 
         System.out.println("extension point: extension from " + context.getBundle().getSymbolicName());
         TextProvider service = context.getService(serviceReference);
-        System.out.println("service.text:" + service.text());
+//        System.out.println("service.text:" + service.text());
         return service;
     }
 

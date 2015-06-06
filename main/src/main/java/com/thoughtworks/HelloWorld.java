@@ -57,7 +57,7 @@ public class HelloWorld {
         Collection<ServiceReference<TextProvider>> refs = context.getServiceReferences(TextProvider.class, null);
         for (ServiceReference<TextProvider> ref: refs) {
             TextProvider textProvider = context.getService(ref);
-            System.out.println("  " + textProvider.text());
+//            System.out.println("  " + textProvider.text());
         }
     }
 

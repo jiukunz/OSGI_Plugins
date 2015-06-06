@@ -12,7 +12,7 @@ public class Activitor implements BundleActivator {
 
     @Override
     public void start(BundleContext context) throws Exception {
-        Hashtable<String, Object> config = new Hashtable<String, Object>();
+        Hashtable<String, Object> config = new Hashtable<>();
         registration = context.registerService(TextProvider.class, new ExtensionA(), config);
     }
 

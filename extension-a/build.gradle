@@ -9,7 +9,7 @@ dependencies {
 jar {
     manifest {
         instruction 'Bundle-Activator', 'com.thoughtworks.extension_a.Activitor'
-        instruction 'Import-Package', 'org.osgi.framework', 'com.thoughtworks.extensionpoint'
+        instruction 'Import-Package', 'org.osgi.framework', 'com.thoughtworks.extensionpoint', 'android.content', 'android.util', 'android.view', 'android.widget'
         instruction 'Bundle-Name', 'extension-a'
     }
 }

@@ -7,12 +7,12 @@ import org.osgi.framework.ServiceRegistration;
 
 import java.util.Hashtable;
 
-public class Activitor implements BundleActivator{
+public class Activitor implements BundleActivator {
     private ServiceRegistration<TextProvider> registration;
 
     @Override
     public void start(BundleContext context) throws Exception {
-        Hashtable<String, Object> config = new Hashtable<String, Object>();
+        Hashtable<String, Object> config = new Hashtable<>();
         registration = context.registerService(TextProvider.class, new ExtensionB(), config);
     }
 
